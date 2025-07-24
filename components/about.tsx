@@ -22,8 +22,7 @@ export default function About() {
       <p className="mb-3">
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is
+        feeling of finally figuring out a solution to a problem.{' '}
         <span className="font-medium">
           I frequently use React, Next.js, Angular, Node.js, and SQL
         </span>
@@ -33,9 +32,9 @@ export default function About() {
 
       <p>
         <span className="italic">When I{"'"}m not coding</span>, I enjoy
-        writing, fitness, teaching, and
+        writing, fitness, teaching, and{' '}
         <span className="font-medium">learning new things</span>. I am currently
-        learning about
+        learning about{' '}
         <span className="font-medium">history and philosophy</span>.
       </p>
     </motion.section>
