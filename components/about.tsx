@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import React, { useEffect } from 'react';
+import React from 'react';
 import SectionHeading from './section-heading';
 import { useSectionView } from '@/lib/hooks';
 
@@ -23,7 +23,7 @@ export default function About() {
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
         feeling of finally figuring out a solution to a problem. My core stack
-        is{' '}
+        is
         <span className="font-medium">
           I frequently use React, Next.js, Angular, Node.js, and SQL
         </span>
@@ -32,10 +32,10 @@ export default function About() {
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy writing,
-        fitness, teaching, and{' '}
+        <span className="italic">When I{"'"}m not coding</span>, I enjoy
+        writing, fitness, teaching, and
         <span className="font-medium">learning new things</span>. I am currently
-        learning about{' '}
+        learning about
         <span className="font-medium">history and philosophy</span>.
       </p>
     </motion.section>

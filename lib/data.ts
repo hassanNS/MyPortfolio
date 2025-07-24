@@ -1,7 +1,6 @@
 import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
-import profilePic from '@/public/profile_pic.jpeg';
 import mutanabbi from '@/public/mutanabbi.png';
 import adabai from '@/public/adabai.svg';
 import poebookImg from '@/public/poeBook.webp';
