@@ -80,6 +80,7 @@ export const projectsData = [
       'OpenAI API',
     ],
     imageUrl: mutanabbi,
+    link: 'https://mutanabbi.vercel.app/',
   },
   {
     title: 'Adab AI',
@@ -87,6 +88,7 @@ export const projectsData = [
       'Arabic Composition web app that gives your prompts to write and improve your Arabic.',
     tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Turso', 'OpenAI API'],
     imageUrl: adabai,
+    link: '',
   },
   {
     title: 'Pearls in the Deep',
@@ -102,6 +104,7 @@ export const projectsData = [
       'Podcasting',
     ],
     imageUrl: poebookImg,
+    link: 'https://pearlsinthedeep.com',
   },
 ] as const;
 

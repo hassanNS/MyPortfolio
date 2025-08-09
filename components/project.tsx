@@ -13,6 +13,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  link,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -50,31 +51,35 @@ export default function Project({
 
         {/* Mobile image (only shows on small screens) */}
         <div className="relative h-60 sm:hidden w-full mt-4">
-          <Image
-            src={imageUrl}
-            alt={`${title} project`}
-            fill
-            className="object-cover rounded-lg"
-            sizes="(max-width: 640px) 80vw"
-            quality={95}
-          />
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <Image
+              src={imageUrl}
+              alt={`${title} project`}
+              fill
+              className="object-cover rounded-lg"
+              sizes="(max-width: 640px) 80vw"
+              quality={95}
+            />
+          </a>
         </div>
 
         {/* Desktop image (preserves all existing animations) */}
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="hidden sm:flex absolute w-[20rem] sm:w-[28.5rem] top-8 -right-50 sm:-right-40 rounded-t-lg shadow-2xl
-            sm:group-even:right-[initial] sm:group-even:-left-40
-            sm:group-hover:-translate-x-3
-            sm:group-hover:translate-y-3
-            sm:group-hover:-rotate-2
-            group-hover:scale-[1.04]
-            sm:group-even:group-hover:translate-x-3
-            sm:group-even:group-hover:-translate-y-3
-            sm:group-even:group-hover:rotate-2"
-        />
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <Image
+            src={imageUrl}
+            alt={`${title} project`}
+            quality={95}
+            className="hidden sm:flex absolute w-[20rem] sm:w-[28.5rem] top-8 -right-50 sm:-right-40 rounded-t-lg shadow-2xl
+              sm:group-even:right-[initial] sm:group-even:-left-40
+              sm:group-hover:-translate-x-3
+              sm:group-hover:translate-y-3
+              sm:group-hover:-rotate-2
+              group-hover:scale-[1.04]
+              sm:group-even:group-hover:translate-x-3
+              sm:group-even:group-hover:-translate-y-3
+              sm:group-even:group-hover:rotate-2"
+          />
+        </a>
       </section>
     </motion.div>
   );
