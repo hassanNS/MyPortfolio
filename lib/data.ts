@@ -4,6 +4,7 @@ import { FaReact } from 'react-icons/fa';
 import mutanabbi from '@/public/mutanabbi.png';
 import adabai from '@/public/adabai.svg';
 import poebookImg from '@/public/poeBook.webp';
+import sunnahSpace from '@/public/sunnahSpace.svg';
 
 export const links = [
   {
@@ -105,6 +106,14 @@ export const projectsData = [
     ],
     imageUrl: poebookImg,
     link: 'https://pearlsinthedeep.com',
+  },
+  {
+    title: 'SunnahSpace',
+    description:
+      'A comprehensive platform for Islamic knowledge and community engagement.',
+    tags: ['Islamic Studies', 'Community', 'Education', 'Web Platform'],
+    imageUrl: sunnahSpace,
+    link: 'https://sunnahspace.org',
   },
 ] as const;
 
